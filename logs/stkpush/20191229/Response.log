@@ -1,0 +1,16 @@
+2019-12-29 07:19:31::{
+            "MerchantRequestID":"12724-6426790-1",
+            "CheckoutRequestID":"ws_CO_291220190919382958",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
+2019-12-29 07:20:37::{
+            "MerchantRequestID":"23086-6450517-1",
+            "CheckoutRequestID":"ws_CO_291220190920444198",
+            "ResponseCode": "0",
+            "ResponseDescription":"Success. Request accepted for processing",
+            "CustomerMessage":"Success. Request accepted for processing"
+        }
+        
