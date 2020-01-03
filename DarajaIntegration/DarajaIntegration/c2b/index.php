@@ -1,17 +1,17 @@
 <?php
-
+error_reporting(E_ALL);
 require_once '../Functions.php';
-include('../connect.php');
+//include('../connect.php');
 $func = new Functions();
 
 //Reg configurations
 $regurl = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl';
-$confirmationUrl = 'https://c3e00ced.ngrok.io/DarajaIntegration/c2b/confirmation/';
-$validationUrl = 'https://c3e00ced.ngrok.io/DarajaIntegration/c2b/validation/';
-$shortcode = 602942;
+$confirmationUrl = 'https://9bb8ea4f.ngrok.io/DarajaIntegration/c2b/confirmation/';
+$validationUrl = 'https://9bb8ea4f.ngrok.io/DarajaIntegration/c2b/validation/';
+$shortcode = 601754;
 //Auth configurations
-$consumer_key = 'rdw9g5DzW6mfVSQ8GfruAPDGMY0TLc2f'; //Fill with your app Consumer Key
-$consumer_secret = '7koLaFmBusW2IOdi'; // Fill with your app Secret
+$consumer_key = 'GvzjNnYgNJtwgwfLBkZh65VPwfuKvs0V'; //Fill with your app Consumer Key
+$consumer_secret = 'oOpJICRVlyrGSAkM'; // Fill with your app Secret
 $authurl = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
 
 //C2B Simulate configurations..NB: On live this will not be required since transactions will originate from phone

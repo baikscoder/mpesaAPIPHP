@@ -3,7 +3,7 @@
 /* Database config */
 $db_host = 'localhost';
 $db_user = 'root';
-$db_pass = '';
+$db_pass = 'Baiks@123';
 $db_database = 'betting';
 
 /* End config */

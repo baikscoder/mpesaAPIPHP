@@ -1,6 +1,6 @@
 <?php
 require_once '../../Functions.php';
-include('../../connect.php');
+//include('../../connect.php');
 $func = new Functions();
 
 $ResultCode = 0;
@@ -8,6 +8,7 @@ $ResultDesc = "Transaction validated successfully";
 $arrayresponse = array("ResultCode" => $ResultCode, "ResultDesc" => $ResultDesc);
 $mpesarequest = json_decode(file_get_contents('php://input'), true);
 $dir = "\\logs\\c2b\\";
+file_put_contents(date("Y-m-d") . ".log", date("Y-m-d h:i:s") . "::" . $curl_response . "\n", FILE_APPEND | LOCK_EX);
 //log request from mpesa
 $func->file_force_contents($dir, json_encode($mpesarequest), "Validationrequest.log");
 
